@@ -1,6 +1,6 @@
 <?php
 
-	namespace Viva\SMSMailerBundle\Services;
+	namespace Vivait\SMSMailerBundle\Services;
 
 
 	abstract class SMSGateway {

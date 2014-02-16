@@ -1,10 +1,10 @@
 <?php
 
-	namespace Viva\SMSMailerBundle\Services;
+	namespace Vivait\SMSMailerBundle\Services;
 
 	use Symfony\Component\DependencyInjection\ContainerInterface;
-	use Viva\SettingsBundle\Interfaces\Settings;
-	use Viva\SettingsBundle\Services\SettingsService;
+	use Vivait\SettingsBundle\Interfaces\Settings;
+	use Vivait\SettingsBundle\Services\SettingsService;
 
 	class SMSMailer implements Settings {
 
@@ -18,13 +18,13 @@
 		public function __construct(ContainerInterface $container) {
 			$this->container = $container;
 
-			$config = $container->getParameter('viva_sms_mailer');
+			$config = $container->getParameter('vivait_sms_mailer');
 			if($config['type']=='packetmedia') {
-				$this->gateway = $container->get('viva_sms.packetmedia');
+				$this->gateway = $container->get('vivait_sms.packetmedia');
 			} elseif($config['type']=='esendex') {
-				$this->gateway = $container->get('viva_sms.esendex');
+				$this->gateway = $container->get('vivait_sms.esendex');
 			} elseif($config['type']=='andrewsandarnold') {
-				$this->gateway = $container->get('viva_sms.andresandarnold');
+				$this->gateway = $container->get('vivait_sms.andresandarnold');
 			}
 
 		}

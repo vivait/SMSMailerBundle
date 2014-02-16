@@ -1,11 +1,11 @@
 <?php
 
-	namespace Viva\SMSMailerBundle\Services;
+	namespace Vivait\SMSMailerBundle\Services;
 
 
-	use Viva\SettingsBundle\Services\SettingsService;
-	use Viva\SMSMailerBundle\Form\Type\Settings\EsendexSMSType;
-	use Viva\SettingsBundle\Interfaces\Settings;
+	use Vivait\SettingsBundle\Services\SettingsService;
+	use Vivait\SMSMailerBundle\Form\Type\Settings\EsendexSMSType;
+	use Vivait\SettingsBundle\Interfaces\Settings;
 
 	class EsendexSMSGateway extends SMSGateway implements Settings {
 		protected $settings_registry;

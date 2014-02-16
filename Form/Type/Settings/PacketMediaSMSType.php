@@ -1,5 +1,5 @@
 <?php
-namespace Viva\SMSMailerBundle\Form\Type\Settings;
+namespace Vivait\SMSMailerBundle\Form\Type\Settings;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

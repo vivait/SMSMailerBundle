@@ -1,10 +1,10 @@
 <?php
 
-	namespace Viva\SMSMailerBundle\Services;
+	namespace Vivait\SMSMailerBundle\Services;
 
-	use Viva\SettingsBundle\Services\SettingsService;
-	use Viva\SMSMailerBundle\Form\Type\Settings\AndrewsAndArnoldSMSType;
-	use Viva\SettingsBundle\Interfaces\Settings;
+	use Vivait\SettingsBundle\Services\SettingsService;
+	use Vivait\SMSMailerBundle\Form\Type\Settings\AndrewsAndArnoldSMSType;
+	use Vivait\SettingsBundle\Interfaces\Settings;
 
 	class AndrewsAndArnoldSMSGateway extends SMSGateway implements Settings {
 		public function getSettingsName() { return 'Andrews and Arnold SMS'; }

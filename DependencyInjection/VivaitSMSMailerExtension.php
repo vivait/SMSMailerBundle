@@ -1,6 +1,6 @@
 <?php
 
-	namespace Viva\SMSMailerBundle\DependencyInjection;
+	namespace Vivait\SMSMailerBundle\DependencyInjection;
 
 	use Symfony\Component\DependencyInjection\ContainerBuilder;
 	use Symfony\Component\Config\FileLocator;
@@ -11,7 +11,7 @@
 	 * This is the class that loads and manages your bundle configuration
 	 * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
 	 */
-	class VivaSMSMailerExtension extends Extension {
+	class VivaitSMSMailerExtension extends Extension {
 		/**
 		 * {@inheritDoc}
 		 */
@@ -24,6 +24,6 @@
 
 			$conf   = new Configuration();
 			$config = $this->processConfiguration($conf, $configs);
-			$container->setParameter('viva_sms_mailer', $config);
+			$container->setParameter('vivait_sms_mailer', $config);
 		}
 	}

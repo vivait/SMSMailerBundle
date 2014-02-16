@@ -1,9 +1,9 @@
 <?php
 
-	namespace Viva\SMSMailerBundle\Services;
-	use Viva\SettingsBundle\Interfaces\Settings;
-	use Viva\SettingsBundle\Services\SettingsService;
-	use Viva\SMSMailerBundle\Form\Type\Settings\PacketMediaSMSType;
+	namespace Vivait\SMSMailerBundle\Services;
+	use Vivait\SettingsBundle\Interfaces\Settings;
+	use Vivait\SettingsBundle\Services\SettingsService;
+	use Vivait\SMSMailerBundle\Form\Type\Settings\PacketMediaSMSType;
 
 	class PacketMediaSMSGateway extends SMSGateway implements Settings {
 		public function getSettingsName() { return 'Packet Media SMS'; }
@@ -16,7 +16,7 @@
 		}
 
 		public function sendSMS($number, $message) {
-			$settings = $this->container->get('viva_settings.registry');
+			$settings = $this->container->get('vivait_settings.registry');
 
 			$username = $this->getSettingsRegistry()->get('username', 'sms_packetmedia');
 			$password = $this->getSettingsRegistry()->get('password', 'sms_packetmedia');

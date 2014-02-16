@@ -1,27 +1,27 @@
 parameters:
-    sms_mailer.class:      Viva\SMSMailerBundle\Services\SMSMailer
+    sms_mailer.class:      Vivait\SMSMailerBundle\Services\SMSMailer
 
 services:
-    viva_sms_mailer:
+    vivait_sms_mailer:
         class:        "%sms_mailer.class%"
         arguments:    [ @service_container ]
         tags:
-            - { name: viva_settings.register, alias: sms_mailer }
+            - { name: vivait_settings.register, alias: sms_mailer }
 
-    viva_sms.esendex:
-        class:        Viva\SMSMailerBundle\Services\EsendexSMSGateway
+    vivait_sms.esendex:
+        class:        Vivait\SMSMailerBundle\Services\EsendexSMSGateway
         arguments:    [ @service_container ]
         tags:
-            - { name: viva_settings.register, alias: sms_esendex }
+            - { name: vivait_settings.register, alias: sms_esendex }
 
-    viva_sms.andresandarnold:
-        class:        Viva\SMSMailerBundle\Services\AndrewsAndArnoldSMSGateway
+    vivait_sms.andresandarnold:
+        class:        Vivait\SMSMailerBundle\Services\AndrewsAndArnoldSMSGateway
         arguments:    [ @service_container ]
         tags:
-            - { name: viva_settings.register, alias: sms_andrewsandarnold }
+            - { name: vivait_settings.register, alias: sms_andrewsandarnold }
 
-    viva_sms.packetmedia:
-        class:        Viva\SMSMailerBundle\Services\PacketMediaSMSGateway
+    vivait_sms.packetmedia:
+        class:        Vivait\SMSMailerBundle\Services\PacketMediaSMSGateway
         arguments:    [ @service_container ]
         tags:
-            - { name: viva_settings.register, alias: sms_packetmedia }
+            - { name: vivait_settings.register, alias: sms_packetmedia }
