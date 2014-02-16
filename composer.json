@@ -1,6 +1,6 @@
 {
-    "name": "vivait/sms-bundle",
-    "description": "SMS Bundle",
+    "name": "vivait/sms-mailer-bundle",
+    "description": "SMS Mailer Bundle",
     "license": "proprietary",
     "authors": [
         {
@@ -18,8 +18,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Vivait\\SMSBundle": ""
+            "Vivait\\SMSMailerBundle": ""
         }
     },
-    "target-dir": "Vivait/SMSBundle"
+    "target-dir": "Vivait/SMSMailerBundle"
 }
