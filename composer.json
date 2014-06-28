@@ -14,7 +14,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-		    "vivait/bootstrap-bundle": "1.1.x"
+        "vivait/bootstrap-bundle": "~1.1"
     },
     "autoload": {
         "psr-0": {
